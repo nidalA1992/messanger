@@ -1,10 +1,10 @@
-import express from "express";
+import express from 'express';
 
-const PORT = process.argv[2] || "3000";
+const PORT = process.argv[2] || '3000';
 
 const app = express();
 
-app.use(express.static("dist"));
+app.use(express.static('dist'));
 
 app.listen(PORT, () => {
   console.log(`Local: http://localhost:${PORT}`);

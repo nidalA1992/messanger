@@ -1,3 +1,1 @@
-import "./style.css";
-
-document.querySelector("#app").innerHTML = `INITIAL`;
+document.querySelector('#app').innerHTML = `INITIAL`;

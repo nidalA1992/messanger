@@ -15,7 +15,12 @@ function generateRange({ start, step, length }) {
 function prepareData(_start, _end, _step) {
   const start = _end === undefined ? 0 : _start;
   const end = _end === undefined ? _start : _end;
-  const step = _step === undefined ? (end < start ? -1 : 1) : _step;
+  const step =
+    _step === undefined ?
+      end < start ?
+        -1
+      : 1
+    : _step;
   const length = Math.max(Math.ceil((end - start) / (step || 1)), 0);
 
   return { start, step, length };
